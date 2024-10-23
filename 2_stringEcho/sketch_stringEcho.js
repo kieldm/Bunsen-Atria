@@ -13,10 +13,7 @@ function setup() {
   bkgdColor = color('#29292B');
   foreColor = color(255);
 
-  pointCount = floor(height/pointSpread) + 5;
-
   createStringPoints();
-
 }
 
 function draw() {
@@ -47,6 +44,8 @@ function mouseMoved(){
 }
 
 function createStringPoints(){
+  pointCount = floor(height/pointSpread) + 5;
+
   stringPoints = [];
   
   for(var p = 0; p < stringCount; p++){
