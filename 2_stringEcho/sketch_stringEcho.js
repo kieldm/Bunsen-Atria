@@ -26,7 +26,8 @@ function draw() {
 
     noFill();
     stroke(foreColor);
-
+    strokeWeight(2);
+    
     beginShape();
     for(var m = 0; m < pointCount; m++){
       stringPoints[p][m].run();
